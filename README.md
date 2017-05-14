@@ -28,9 +28,11 @@ __Requirements__: _AWS (i.e., [LightSail](https://amazonlightsail.com)) Account,
 #### Using the AWS CLI
 
 * The first thing you will need is your site _bucket name_. This can be obtained from your _AWS S3_ dashboard
-* You will want to initially sync the starter content from S3 locally (where the project was cloned) by running _aws s3 sync s3://bucket name/ ._
+* You will want to initially sync the starter content from S3 locally (where the project was cloned) by running _aws s3 sync s3://bucket-name/ . (might consider setting up a sourced variable for the bucket name such as 'S3_URL=s3://bucket-name')_
+* Preview any changes using a Content Management System (CMS) or browser (i.e., * file:///git-local-path/some-file.html)
 * Next, make sure you add/commit and push content to GitHub (i.e., _git add \*_ and _git commit \*_)
-* To upload changes or new content run _aws s3 cp local-dir-or-file s3://bucket name/_
+* To upload changes or new content run _aws s3 cp local-dir-or-file $S3_URL/local-dir-or-file_
+* To delete a file run _aws s3 rm $S3_URL/some-file_
 
 #### References
 * [AWS CLI Command Reference](http://docs.aws.amazon.com/cli/latest/reference/s3/)
