@@ -6,7 +6,7 @@
 
 This Web site is currently hosted on _AWS Amazon_. It uses [_S3_](https://aws.amazon.com/s3/) for content and [_Route 53_](https://aws.amazon.com/route53/) for DNS management. I personally found this solution to be the most versatile and cost-effective for storage, hosting, and DNS management. Below are the steps for easily syncing content between the AWS S3 bucket and locally.
 
-__Requirements__: _AWS (i.e., [LightSail](https://amazonlightsail.com)) Account, Python 2.7 or higher, and setup completed in the AWS Dashboard. For Setting up DNS Hosted Zone (Route 53 Dashboard) and a Bucket with Starter Content (S3 Dashboard) there is plenty of AWS documentation/tutorials_.
+__Requirements__: _AWS (i.e., [LightSail](https://amazonlightsail.com)) Account, Python 2.7 or higher, and setup completed in the AWS Dashboard. For instructions on setting up DNS Hosted Zone (Route 53 Dashboard) and a Bucket with starter content (S3 Dashboard) visit the [AWS](https://aws.amazon.com) site_.
 
 ### Mac OS (UNIX) Setup
 
@@ -34,5 +34,4 @@ __Requirements__: _AWS (i.e., [LightSail](https://amazonlightsail.com)) Account,
 
 #### References
 * [AWS CLI Command Reference](http://docs.aws.amazon.com/cli/latest/reference/s3/)
-
 
